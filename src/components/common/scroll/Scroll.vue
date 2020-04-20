@@ -30,7 +30,8 @@ export default {
     this.scroll = new BScroll(this.$refs.wrapper, {
       click: true,
       probeType: this.probeType,
-      pullUpLoad: this.pullUpLoad
+      pullUpLoad: this.pullUpLoad,
+      mouseWheel: true
     });
     // 监听滚动位置
     this.scroll.on("scroll", position => {
